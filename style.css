@@ -14,7 +14,7 @@ div>ul>li>button:focus{
 .todo-add{
     background-color:rgb(126, 0, 216);
     color: white;
-    width:15vw;
+    width:20vw;
     padding:5px;
     margin-top: 10px;
 }
