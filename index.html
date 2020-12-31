@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e25b852c87.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&family=Old+Standard+TT&family=Cinzel&family=Krona+One&family=Playfair+Display+SC&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="todo">
+      <div class="flex flex-col items-center">
+        <button class="todo-add outline-none rounded" onclick="clickhandler()">
+          <span> Add <i class="far fa-plus-square"></i> </span>
+        </button>
+        <div class="hidden" id="todoinput">
+          <input
+            type="text"
+            class="outline-none rounded"
+            id="inputbox"
+            placeholder="Enter your todo..."
+          />
+        </div>
+      </div>
+      <div class="flex flex-row justify-center">
+        <ul class="list-none" id="todo-items"></ul>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
