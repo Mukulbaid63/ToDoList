@@ -1,0 +1,27 @@
+.todo-add:focus {outline:0;}
+div>ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+div>ul>li>button>i{
+    margin-left: 13px;
+}
+div>ul>li>button:focus{
+    outline: 0;
+}
+.todo-add{
+    background-color:rgb(126, 0, 216);
+    color: white;
+    width:15vw;
+    padding:5px;
+    margin-top: 10px;
+}
+#inputbox{
+    border: 1px gray solid;
+    width: 15vw;
+    margin-top:5px;
+    transition: 0.2s ease-out;
+    padding: 5px;
+}
