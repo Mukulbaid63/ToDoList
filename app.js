@@ -26,18 +26,37 @@ function showItemOnList(value) {
         localStorage.setItem("todo",JSON.stringify(toDoList))
         console.log(toDoList);
     });
+    const check=document.createElement('input');
+    const textNode =document.createElement("span");
+    
+    textNode.setAttribute("id","itemList")
+    textNode.innerHTML=`${value}`;
+    check.setAttribute("type","checkbox");
+    check.addEventListener('change', function() {
+        if (this.checked) {
+          textNode.classList.add("line-through")
+        } else {
+            textNode.classList.remove("line-through")        }
+      });
+    
     delButton.classList.add("outline-none")
     const deleteTodo=document.createElement("i");
-    delButton.classList.add('hidden');
-    toDoItem.addEventListener('mouseover',()=>{delButton.classList.remove('hidden')});
-    toDoItem.addEventListener('mouseout',()=>{delButton.classList.add('hidden')});
+    // delButton.classList.add('hidden');
+    // toDoItem.addEventListener('mouseover',()=>{delButton.classList.remove('hidden')});
+    // toDoItem.addEventListener('mouseout',()=>{delButton.classList.add('hidden')});
 
     deleteTodo.classList.add("fa-times-circle");
     deleteTodo.classList.add("far");
     delButton.appendChild(deleteTodo);
-    const textNode =document.createTextNode(value);
+ 
+    const toDoItemutil=document.createElement("div");
+    toDoItemutil.setAttribute("id","innerbuttons")
+
     toDoItem.appendChild(textNode);
-    toDoItem.appendChild(delButton);
+    toDoItemutil.appendChild(check);
+    toDoItemutil.appendChild(delButton);
+    toDoItem.appendChild(toDoItemutil)
+    
     todoListReference.appendChild(toDoItem);
     
 }
