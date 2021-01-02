@@ -11,6 +11,7 @@ div>ul>li{
 div>ul>li>div>button{
     margin-left: 9px;
     color: gray;
+    outline:none;
 
 }
 div>ul>li>button:focus{
