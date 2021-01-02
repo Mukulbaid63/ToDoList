@@ -1,16 +1,23 @@
 .todo-add:focus {outline:0;}
 div>ul>li{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 3px;
+    justify-content: space-between;
+    
 }
 
-div>ul>li>button{
-    margin-left: 30px;
+
+div>ul>li>div>button{
+    margin-left: 9px;
+    color: gray;
+
 }
 div>ul>li>button:focus{
     outline: 0;
+}
+#innerbuttons{
+    margin-left: 20px;
 }
 .todo-add{
     background-color:rgb(126, 0, 216);
