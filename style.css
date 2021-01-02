@@ -11,10 +11,10 @@ div>ul>li{
 div>ul>li>div>button{
     margin-left: 9px;
     color: gray;
-    outline:none;
+    
 
 }
-div>ul>li>button:focus{
+div>ul>li>div>button:focus{
     outline: 0;
 }
 #innerbuttons{
