@@ -1,4 +1,6 @@
 # Karya Suchi
+## Check the Site out here:<a href="https://karyasuchi.netlify.app">Karya Suchi</a>
+
 ## Points to keep in mind while contributing:
 - Issues will be assigned on a first come, first serve basis. You just have to comment on the issue, asking to be assigned, and it will be done if found fit and complete the issue within 7 days.
 - Preferably, you cannot work on any issue that is not assigned to you.
